@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:background="#1A000000"
+    android:paddingHorizontal="20dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã phiếu mượn"
+        android:id="@+id/edMaPM"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/spMaTV"
+        android:textStyle="bold"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/spMaSach"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Ngày: "
+        android:textColor="@color/black"
+        android:id="@+id/tvNgay"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Tiền thuê: "
+        android:textColor="@color/black"
+        android:id="@+id/tvTienThue"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="25dp"
+        android:text="Đã trả sách"
+        android:textColor="@color/black"
+        android:id="@+id/chkTraSach"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_margin="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancelPM"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:backgroundTint="#ccc"
+            android:textColor="@color/white"
+            android:text="Hủy"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSavePM"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:backgroundTint="#2196F3"
+            android:textColor="@color/white"
+            android:text="Lưu"/>
+
+
+    </LinearLayout>
+</LinearLayout>

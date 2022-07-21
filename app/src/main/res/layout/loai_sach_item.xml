@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+<LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_weight="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/tvMaLoaiSach"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="MaLoaiSach"
+            android:gravity="center|left"/>
+
+        <TextView
+            android:id="@+id/tvTenLoaiSach"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="TenLoaiSach"
+            android:textSize="20dp"
+            android:textColor="#009688"
+            android:textStyle="bold"
+            android:gravity="center|left"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgDeleteLS"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_weight="2"
+        android:src="@drawable/ic_delete"/>
+
+</LinearLayout>

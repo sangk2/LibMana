@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="match_parent"
+    android:background="#1A000000"
+    android:paddingHorizontal="20dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edMaLoaiSach"
+        android:hint="Mã Loại Sách"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColorHint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:id="@+id/edTenLoaiSach"
+                android:hint="Tên Loại Sách"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_margin="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancelLS"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:backgroundTint="#ccc"
+            android:textColor="@color/white"
+            android:text="Hủy"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSaveLS"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:backgroundTint="#2196F3"
+            android:textColor="@color/white"
+            android:text="Lưu"/>
+
+    </LinearLayout>
+</LinearLayout>
